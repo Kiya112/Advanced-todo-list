@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced todo list</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <img src="images/todolist.jpg" alt="todo list">
+            <h3>Dashboard</h3>
+            <div id="task-list">
+                <h4>NEW TASK</h4>
+                <br>
+            </div>
+            
+            <div id="project-list">
+                <h4>NEW PROJECT</h4>
+                <br>
+            </div>
+            
+        </div>
+        <div class="main-area">
+            <div class="main-header">
+                <img src="images/planner.jpg" alt="planner">
+                <h1>MY TODO LIST</h1>
+            </div>
+            <div class="main-content">
+                <div class="box">
+                    <p>ADD Task</p>
+                    <br>
+                    <button id="todoBtn">Add Todo</button>
+                </div>
+                <div class="box">
+                    <p>ADD PROJECT</p>
+                    <br>
+                    <button id="projectBtn">Add project</button>
+                </div>
+                <div id="todo-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Task modal -->
+    <div id="modal">
+        <div id="modal-content">
+            <h2>Add Task</h2>
+            <input type="text" id="taskname" placeholder="Task name">
+            <br>
+             <h5>Task priority</h5>
+            <select id="task-priority">
+               
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+            <br><br>
+            <button id="modal-close">OK</button>
+        </div>
+    </div>
+
+    <!-- Project modal -->
+    <div id="project-modal">
+        <div id="project-modal-content">
+            <h2>Add Project</h2>
+            <input type="text" id="projectname" placeholder="Project name">
+            <br>
+            <h5>Project priority</h5>
+        <select id="project-priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+            <br><br>
+            <button id="project-modal-close">OK</button>
+        </div>
+    </div>
+
+    <footer>@mytodo list 2026 reserved</footer>
+</body>
+</html>

@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width:100%
+    min-height 100vh;
+    background-image: url(../pictures/bg.jpg);
+    background-size:fit;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+h1 {
+    font-family: cursive;
+    font-weight: 50;
+    text-align: center;
+    width: 100%;
+    padding-top: 50x;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: transparent;
+    padding: 30px;
+     border-right: 2px solid black;
+    border-radius: 50px;
+    align-items: start;
+    min-height: 100vh;
+    color: black;
+    width: 200px;
+    flex-shrink: 0;
+}
+.navbar img{
+    height: 50px;
+    width: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+   
+}
+
+.main-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 30px;
+    justify-content: center;
+}
+
+.main-area img {
+    width:1000px;
+    height: 150px;
+    object-fit: cover;
+   
+    
+}
+
+
+
+.main-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 100px;
+    padding: 10px;
+}
+
+button {
+    font-size: 16px;
+    font-family: cursive;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #6a75f0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #3949ab;
+    cursor: pointer;
+}
+
+p {
+    margin: 10px;
+    font-family: 'Lucida Sans', sans-serif;
+}
+#project-list{
+font-weight: bold;
+font-family: cursive;
+background-color:rgba(255, 255, 255, 0.5);
+}
+#task-list{
+  font-weight: bold;
+font-family: cursive;
+background-color:rgba(255, 255, 255, 0.5);  
+}
+#task-list div, #project-list div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: transparent;
+    padding: 10px;
+}
+#modal{
+    display: none;
+    justify-content: center;
+    background-image: url(../pictures/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+     align-items: center;
+    z-index: 999; 
+    top: 0;
+    left: 0;
+
+}
+#modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+#modal-content input{
+    padding: 10px;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+#project-modal{
+     display: none;
+    justify-content: center;
+    background-image: url(../pictures/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+     align-items: center;
+    z-index: 999; 
+    top: 0;
+    left: 0;
+
+}
+#project-modal-content{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+#project-modal-content input{
+    padding: 10px;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.priority-high {
+    background-color: red;
+   width: 15px;
+    height: 15px;
+}
+
+.priority-medium {
+    background-color: yellow;
+    width: 15px;
+    height: 15px;
+}
+
+.priority-low {
+    background-color: green;
+    width: 15px;
+    height: 15px;
+}
+/* phone screen*/
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .main-content {
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
